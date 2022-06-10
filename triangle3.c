@@ -1,17 +1,13 @@
-#include<stdio.h>
-
+#include <stdio.h>
 int main()
 {
-	int i, j, n;
-	scanf( "%d", &n );
-	for( i = 1 ; i <= n ; i++ )
-	{
-		for( j = 1 ; j <= n ; j++ )
-			if ( j < i )
-				printf(" ");
-			else
-				printf("*");
-		printf("\n");
-	}
-	return 0;
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int f = a;
+    for (int i = 1; i < d; i++)
+    {
+        f = f * b + c;
+    }
+    printf("%d", f);
+
 }
